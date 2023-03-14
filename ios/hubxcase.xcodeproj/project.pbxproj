@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-hubxcase-hubxcaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-hubxcase-hubxcaseTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C3BFFCF129C0E3090045A9CB /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = C3BFFCEF29C0E3080045A9CB /* selection.json */; };
+		C3BFFCF229C0E3090045A9CB /* hubx-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3BFFCF029C0E3090045A9CB /* hubx-icons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-hubxcase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hubxcase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = hubxcase/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-hubxcase-hubxcaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hubxcase-hubxcaseTests.release.xcconfig"; path = "Target Support Files/Pods-hubxcase-hubxcaseTests/Pods-hubxcase-hubxcaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3BFFCEF29C0E3080045A9CB /* selection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = selection.json; path = ../../src/assets/Fonts/selection.json; sourceTree = "<group>"; };
+		C3BFFCF029C0E3090045A9CB /* hubx-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "hubx-icons.ttf"; path = "../../src/assets/Fonts/hubx-icons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +120,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C3BFFCEE29C0E2D50045A9CB /* Fonts */,
 				13B07FAE1A68108700A75B9A /* hubxcase */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* hubxcaseTests */,
@@ -146,6 +151,15 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-hubxcase-hubxcaseTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3BFFCEE29C0E2D50045A9CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFFCF029C0E3090045A9CB /* hubx-icons.ttf */,
+				C3BFFCEF29C0E3080045A9CB /* selection.json */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BFFCF129C0E3090045A9CB /* selection.json in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				C3BFFCF229C0E3090045A9CB /* hubx-icons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
