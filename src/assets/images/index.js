@@ -8,4 +8,5 @@ export default {
   'onboarding-2-title': require('./onboarding-2-title.png'),
   'onboarding-2-art': require('./onboarding-2-art.png'),
   'onboarding-2-bg': require('./onboarding-2-bg.png'),
+  brush: require('./brush.png'),
 };
