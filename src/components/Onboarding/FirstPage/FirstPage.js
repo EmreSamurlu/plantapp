@@ -1,12 +1,12 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
-const SecondPage = () => {
+const FirstPage = () => {
   return (
     <SafeAreaView>
-      <Text>SecondPage</Text>
+      <Text>FirstPage</Text>
     </SafeAreaView>
   );
 };
 
-export default SecondPage;
+export default FirstPage;
