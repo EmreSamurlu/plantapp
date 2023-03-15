@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 import {colors, fontSize} from '../../../styles';
 
@@ -14,20 +14,32 @@ export default StyleSheet.create({
     margin: 24,
     fontSize: fontSize.xl,
     fontFamily: 'Rubik-Medium',
+    color: colors.text,
+  },
+  image_underline: {
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    height: 12,
+    top: 30,
   },
   bold_text: {
+    fontSize: fontSize.xl,
     fontFamily: 'Rubik-Bold',
+    lineHeight: fontSize.xl,
+    color: colors.text,
+    marginBottom: Platform.OS === 'ios' ? -4 : -6,
   },
+
   image: {
     width: '100%',
-    height: '70%',
-    marginTop: 85,
+    marginTop: '20%',
   },
+
   art: {
     position: 'absolute',
     height: 175,
     width: 175,
-    top: '20%',
+    top: Platform.OS === 'ios' ? '15%' : '10%',
     zIndex: 2,
     right: 0,
   },
