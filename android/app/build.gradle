@@ -1,7 +1,20 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
-
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 import com.android.build.OutputFile
+
+
+project.ext.vectoricons = [
+    iconFontNames: [ 
+    'Rubik-Black.ttf', 
+    'Rubik-Bold.ttf', 
+    'Rubik-ExtraBold.ttf',
+    'Rubik-Light.ttf', 
+    'Rubik-Medium.ttf', 
+    'Rubik-Regular.ttf', 
+    'Rubik-SemiBold.ttf' 
+    ] 
+]
 
 /**
  * This is the configuration block to customize your React Native Android app.

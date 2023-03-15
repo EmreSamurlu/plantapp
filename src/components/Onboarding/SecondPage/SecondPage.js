@@ -3,6 +3,7 @@ import {ImageBackground, SafeAreaView, Text, View} from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 
+import {screenHeight} from '../../../constants/screenDimensions';
 import {Visual} from '../../General';
 import styles from './SecondPage.styles';
 
@@ -15,13 +16,14 @@ const SecondPage = () => {
       <SafeAreaView style={styles.container}>
         <Text style={styles.heading_container}>
           <Text style={styles.text}>Get plant </Text>
-          <Text style={styles.bold_text}>care guides</Text>
+          <ImageBackground
+            source={require('../../../assets/images/brush.png')}
+            resizeMode="contain"
+            imageStyle={styles.image_underline}
+            style={styles.bold_container}>
+            <Text style={styles.bold_text}>care guides</Text>
+          </ImageBackground>
         </Text>
-        <Visual
-          image={'brush'}
-          imageStyle={styles.underline}
-          resizeMode={'contain'}
-        />
         <LinearGradient
           start={{x: 0, y: 0}}
           end={{x: 0, y: 1}}
@@ -36,7 +38,7 @@ const SecondPage = () => {
         />
         <Visual
           image={'onboarding-2'}
-          imageStyle={styles.image}
+          imageStyle={[styles.image, {height: screenHeight * 0.62}]}
           resizeMode={'contain'}
         />
       </SafeAreaView>

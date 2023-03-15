@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Rubik-Black.ttf",
+      "sha1": "d61e5c84ab77f113b9ebdd527720a49dd598ea9e"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-Bold.ttf",
+      "sha1": "09e3c313a1032db53ec85a7ce09ac044e96886f8"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-ExtraBold.ttf",
+      "sha1": "17fac00a1b17b541419fccaf68cbb512bc391093"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-Light.ttf",
+      "sha1": "f58e5f21af4258e1d897aae07630389355aad674"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-Medium.ttf",
+      "sha1": "c943a120e3373b44004228784cfe09e6e5b734db"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-Regular.ttf",
+      "sha1": "a2c4051535895da77ef13b52e187e73ef3257f8f"
+    },
+    {
+      "path": "src/assets/fonts/Rubik-SemiBold.ttf",
+      "sha1": "a13014a8a0017581036836a254673c12e7a98dc2"
+    },
+    {
+      "path": "src/assets/fonts/hubx-icons.ttf",
+      "sha1": "889d6049e4b9be2a3e56812aaa75ecb05a648869"
+    },
+    {
+      "path": "src/assets/fonts/selection.json",
+      "sha1": "2389b9fdc504dc8a12a1878e4b191386939dc16a"
+    }
+  ]
+}
