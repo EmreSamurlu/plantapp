@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImageBackground, SafeAreaView, Text, View} from 'react-native';
+import {Alert, ImageBackground, SafeAreaView, Text, View} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
 
@@ -14,10 +14,10 @@ const GetStarted = () => {
   };
 
   const handleTermsPress = () => {
-    console.log('Terms Pressed');
+    Alert.alert('Terms Pressed');
   };
   const handlePolicyPress = () => {
-    console.log('Policy Pressed');
+    Alert.alert('Policy Pressed');
   };
   return (
     <ImageBackground

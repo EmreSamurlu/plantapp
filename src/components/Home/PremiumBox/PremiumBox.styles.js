@@ -11,6 +11,23 @@ export default StyleSheet.create({
     padding: spacing.xs * 3,
     height: 64,
   },
+  count_container: {
+    width: 15,
+    height: 15,
+    borderRadius: radius.lg,
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 10,
+    left: 36,
+    zIndex: 1,
+  },
+  count: {
+    fontFamily: 'Rubik-Regular',
+    fontSize: fontSize.sm,
+    color: colors.secondaryText,
+    textAlign: 'center',
+  },
   masked_view: {
     flex: 1,
     flexDirection: 'row',

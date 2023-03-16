@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {
   Alert,
-  FlatList,
   ImageBackground,
+  Linking,
   SafeAreaView,
   Text,
   View,
@@ -12,7 +12,12 @@ import {ScrollView} from 'react-native';
 import {useIsFocused} from '@react-navigation/native';
 import {useDispatch, useSelector} from 'react-redux';
 
-import {PremiumBox, QuestionItem, SearchBox} from '../../components';
+import {
+  CategoryItem,
+  PremiumBox,
+  QuestionItem,
+  SearchBox,
+} from '../../components';
 import getCategoriesThunk from '../../redux/features/getCategories/thunks/getCategoriesThunk';
 import getQuestionsThunk from '../../redux/features/getQuestions/thunks/getQuestionsThunk';
 import styles from './Home.styles';
@@ -30,8 +35,9 @@ const Home = () => {
     }
   }, [categories, dispatch, isFocused, questions?.length]);
 
-  // console.log('categories', categories);
-  // console.log('questions', questions);
+  const handleQuestionPress = async item => {
+    await Linking.openURL(item.uri);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -44,7 +50,7 @@ const Home = () => {
         <Text style={styles.greeting_bold}>Good Afternoon! ⛅</Text>
         <SearchBox />
       </ImageBackground>
-      <View style={styles.inner_container}>
+      <ScrollView style={styles.inner_container}>
         <View style={styles.premium_container}>
           <PremiumBox
             onPremiumPress={() => Alert.alert('Premium Button Pressed')}
@@ -55,21 +61,32 @@ const Home = () => {
           <ScrollView
             showsHorizontalScrollIndicator={false}
             horizontal={true}
-            contentContainerStyle={styles.payment_listing}>
+            contentContainerStyle={styles.question_listing}>
             {questions?.map((item, index) => {
               return (
                 <QuestionItem
                   key={index}
-                  description={item.description}
-                  iconName={item.icon_name}
+                  imageUrl={item.image_uri}
+                  onQuestionPress={() => handleQuestionPress(item)}
                   title={item.title}
-                  iconSize={item.icon_size}
                 />
               );
             })}
           </ScrollView>
         </View>
-      </View>
+        <View style={styles.category_container}>
+          {categories?.data?.map((item, index) => {
+            return (
+              <CategoryItem
+                key={index}
+                imageUrl={item?.image?.url}
+                onQuestionPress={() => handleQuestionPress(item)}
+                title={item.title}
+              />
+            );
+          })}
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

@@ -121,7 +121,6 @@ export default [
     component: Profile,
     options: {
       tabBarButton: props => {
-        console.log(props.accessibilityState.selected);
         return (
           <Pressable onPress={() => props.onPress()} style={barItemStyle}>
             <Icon

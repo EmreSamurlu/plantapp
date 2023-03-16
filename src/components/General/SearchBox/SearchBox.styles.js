@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 import {colors, fontSize, radius, spacing} from '../../../styles';
 
@@ -8,7 +8,9 @@ export default StyleSheet.create({
     backgroundColor: colors.background,
     borderRadius: radius.lg,
     flexDirection: 'row',
-    paddingVertical: spacing.sm + spacing.xs,
+    alignItems: 'center',
+    paddingVertical:
+      Platform.OS === 'ios' ? spacing.sm + spacing.xs : spacing.xs,
     paddingHorizontal: spacing.md,
   },
   input_box: {

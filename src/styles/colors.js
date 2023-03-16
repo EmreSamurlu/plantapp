@@ -11,4 +11,5 @@ export default {
   iconBackground: '#0000003D',
   borderColor: '#FFFFFF4D',
   passiveColor: '#BDBDBD',
+  backgroundTwo: '#FBFAFA',
 };
