@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
-import {Dimensions, Text, View} from 'react-native';
+import {Dimensions, SafeAreaView, Text, View} from 'react-native';
 
+import {useNavigation} from '@react-navigation/native';
 import Swiper from 'react-native-swiper';
 
-import {FirstPage, PaymentWall, SecondPage} from '../../components';
+import {Button, FirstPage, PaymentWall, SecondPage} from '../../components';
 import {colors} from '../../styles';
 import styles from './Onboarding.styles';
 
 const {width} = Dimensions.get('window');
 
 const Onboarding = () => {
+  const navigation = useNavigation();
   const [index, setIndex] = useState(0);
 
   return (
@@ -38,9 +40,12 @@ const Onboarding = () => {
         </View>
         <View style={styles.page_container}>
           <SecondPage />
-        </View>
-        <View style={styles.page_container}>
-          <PaymentWall />
+          <View style={styles.next_button}>
+            <Button
+              label={'Continue'}
+              onPress={() => navigation.navigate('PaymentWall')}
+            />
+          </View>
         </View>
       </Swiper>
     </View>

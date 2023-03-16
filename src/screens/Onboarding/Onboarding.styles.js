@@ -34,5 +34,12 @@ export default StyleSheet.create({
     borderRadius: 8,
     bottom: 24,
   },
-  page_container: {flex: 1},
+  page_container: {
+    flex: 1,
+    backgroundColor: colors.background,
+  },
+  next_button: {
+    bottom: 100,
+    marginHorizontal: spacing.lg,
+  },
 });

@@ -1,4 +1,4 @@
-import {GetStarted, Home, Onboarding} from '../screens';
+import {GetStarted, Home, Onboarding, PaymentWall} from '../screens';
 
 export default [
   {
@@ -9,6 +9,11 @@ export default [
   {
     name: 'Onboarding',
     component: Onboarding,
+    options: {},
+  },
+  {
+    name: 'PaymentWall',
+    component: PaymentWall,
     options: {},
   },
   {
