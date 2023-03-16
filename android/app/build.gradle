@@ -12,7 +12,8 @@ project.ext.vectoricons = [
     'Rubik-Light.ttf', 
     'Rubik-Medium.ttf', 
     'Rubik-Regular.ttf', 
-    'Rubik-SemiBold.ttf' 
+    'Rubik-SemiBold.ttf',
+    'FontAwesome.ttf',
     ] 
 ]
 

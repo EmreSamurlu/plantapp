@@ -1,10 +1,18 @@
 import React, {useEffect} from 'react';
-import {ImageBackground, SafeAreaView, Text, View} from 'react-native';
+import {
+  Alert,
+  FlatList,
+  ImageBackground,
+  SafeAreaView,
+  Text,
+  View,
+} from 'react-native';
+import {ScrollView} from 'react-native';
 
 import {useIsFocused} from '@react-navigation/native';
 import {useDispatch, useSelector} from 'react-redux';
 
-import {PremiumBox, SearchBox} from '../../components';
+import {PremiumBox, QuestionItem, SearchBox} from '../../components';
 import getCategoriesThunk from '../../redux/features/getCategories/thunks/getCategoriesThunk';
 import getQuestionsThunk from '../../redux/features/getQuestions/thunks/getQuestionsThunk';
 import styles from './Home.styles';
@@ -38,7 +46,28 @@ const Home = () => {
       </ImageBackground>
       <View style={styles.inner_container}>
         <View style={styles.premium_container}>
-          <PremiumBox />
+          <PremiumBox
+            onPremiumPress={() => Alert.alert('Premium Button Pressed')}
+          />
+        </View>
+        <Text style={styles.get_started}>Get Started</Text>
+        <View style={styles.question_container}>
+          <ScrollView
+            showsHorizontalScrollIndicator={false}
+            horizontal={true}
+            contentContainerStyle={styles.payment_listing}>
+            {questions?.map((item, index) => {
+              return (
+                <QuestionItem
+                  key={index}
+                  description={item.description}
+                  iconName={item.icon_name}
+                  title={item.title}
+                  iconSize={item.icon_size}
+                />
+              );
+            })}
+          </ScrollView>
         </View>
       </View>
     </SafeAreaView>

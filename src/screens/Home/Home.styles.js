@@ -30,6 +30,7 @@ export default StyleSheet.create({
     backgroundColor: colors.background,
   },
   premium_container: {
-    borderWidth: 1,
+    marginVertical: spacing.lg,
+    marginHorizontal: spacing.lg,
   },
 });

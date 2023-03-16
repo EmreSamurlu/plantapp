@@ -2,6 +2,10 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/FontAwesome.ttf",
+      "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+    },
+    {
       "path": "src/assets/fonts/Rubik-Black.ttf",
       "sha1": "d61e5c84ab77f113b9ebdd527720a49dd598ea9e"
     },
