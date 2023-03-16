@@ -39,7 +39,7 @@ export default StyleSheet.create({
     backgroundColor: colors.background,
   },
   next_button: {
-    bottom: 100,
+    bottom: '11%',
     marginHorizontal: spacing.lg,
   },
 });

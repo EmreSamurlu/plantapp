@@ -1,6 +1,12 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
 
-const combineReducer = combineReducers({});
+import getCategoriesReducer from './features/getCategories';
+import getQuestionsReducer from './features/getQuestions';
+
+const combineReducer = combineReducers({
+  getCategories: getCategoriesReducer,
+  getQuestions: getQuestionsReducer,
+});
 
 const rootReducer = (state, action) => {
   return combineReducer(state, action);

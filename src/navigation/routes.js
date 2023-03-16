@@ -1,4 +1,5 @@
-import {GetStarted, Home, Onboarding, PaymentWall} from '../screens';
+import {GetStarted, Onboarding, PaymentWall} from '../screens';
+import HomeTabs from './HomeTabs/HomeTabs';
 
 export default [
   {
@@ -18,7 +19,7 @@ export default [
   },
   {
     name: 'HomeTabs',
-    component: Home,
+    component: HomeTabs,
     options: {},
   },
 ];
