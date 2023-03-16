@@ -10,4 +10,5 @@ export default {
   paymentBackground: '#101E17',
   iconBackground: '#0000003D',
   borderColor: '#FFFFFF4D',
+  passiveColor: '#BDBDBD',
 };
