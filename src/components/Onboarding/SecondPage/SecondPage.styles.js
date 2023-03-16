@@ -12,7 +12,7 @@ export default StyleSheet.create({
   },
   heading_container: {
     margin: 24,
-    fontSize: fontSize.xl,
+    fontSize: fontSize.xxl,
     fontFamily: 'Rubik-Medium',
     color: colors.text,
   },
@@ -23,9 +23,9 @@ export default StyleSheet.create({
     top: 30,
   },
   bold_text: {
-    fontSize: fontSize.xl,
+    fontSize: fontSize.xxl,
     fontFamily: 'Rubik-Bold',
-    lineHeight: fontSize.xl,
+    lineHeight: fontSize.xxl,
     color: colors.text,
     marginBottom: Platform.OS === 'ios' ? -4 : -6,
   },
@@ -44,10 +44,10 @@ export default StyleSheet.create({
     right: 0,
   },
   gradient_bottom: {
-    height: 120,
+    height: 140,
     width: '100%',
     position: 'absolute',
-    bottom: 96,
+    bottom: 10,
     zIndex: 1,
   },
   bottom_container: {

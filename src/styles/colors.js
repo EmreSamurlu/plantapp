@@ -7,4 +7,7 @@ export default {
   gradientOne: '#E5C990',
   gradientTwo: '#E4B046',
   blur: '#FFFFFF14',
+  paymentBackground: '#101E17',
+  iconBackground: '#0000003D',
+  borderColor: '#FFFFFF4D',
 };

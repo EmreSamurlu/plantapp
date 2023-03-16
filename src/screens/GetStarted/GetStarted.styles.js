@@ -8,7 +8,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   heading_container: {
-    fontSize: fontSize.xl,
+    fontSize: fontSize.xxl,
     color: colors.text,
     paddingHorizontal: spacing.lg,
   },

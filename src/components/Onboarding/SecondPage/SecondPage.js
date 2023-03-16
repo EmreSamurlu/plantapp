@@ -38,7 +38,7 @@ const SecondPage = () => {
         />
         <Visual
           image={'onboarding-2'}
-          imageStyle={[styles.image, {height: screenHeight * 0.62}]}
+          imageStyle={[styles.image, {height: screenHeight * 0.6}]}
           resizeMode={'contain'}
         />
       </SafeAreaView>

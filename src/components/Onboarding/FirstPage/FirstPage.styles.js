@@ -9,7 +9,7 @@ export default StyleSheet.create({
   },
   heading_container: {
     margin: 24,
-    fontSize: fontSize.xl,
+    fontSize: fontSize.xxl,
     fontFamily: 'Rubik-Medium',
     color: colors.text,
     justifyContent: 'center',
@@ -22,9 +22,9 @@ export default StyleSheet.create({
     top: 30,
   },
   bold_text: {
-    fontSize: fontSize.xl,
+    fontSize: fontSize.xxl,
     fontFamily: 'Rubik-Bold',
-    lineHeight: fontSize.xl,
+    lineHeight: fontSize.xxl,
     color: colors.text,
     marginBottom: Platform.OS === 'ios' ? -4 : -6,
   },

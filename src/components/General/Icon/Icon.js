@@ -10,10 +10,8 @@ const Visual = createIconSetFromIcoMoon(
   'hubx-icons.ttf',
 );
 
-const Icon = ({iconName, iconSize, iconColor, props}) => {
-  return (
-    <Visual name={iconName} size={iconSize} color={iconColor} {...props} />
-  );
+const Icon = ({iconName, iconSize, iconColor}) => {
+  return <Visual name={iconName} size={iconSize} color={iconColor} />;
 };
 
 export default Icon;
