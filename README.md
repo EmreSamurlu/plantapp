@@ -1,4 +1,4 @@
-# Hub X Case
+# PlantApp
 
 # React Native Version - 0.71.4
 
